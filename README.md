@@ -38,19 +38,19 @@ It would take about 45 minutes to complete this tutorial.
 
 Login to the Healthpass API in the Swagger UI per below using your credentials and hit `Execute`.
 
-![](https://github.ibm.com/sharrkum/getting-started-with-ibm-digital-health-pass/blob/master/images/login-hp-api.png)
+![](https://github.com/IBM/getting-started-with-ibm-digital-health-pass/blob/main/images/login-hp-api.png)
 
 Copy the access token excluding the double quotation marks, click on `Authorize`.
 
-![](https://github.ibm.com/sharrkum/getting-started-with-ibm-digital-health-pass/blob/master/images/authorize.png)
+![](https://github.com/IBM/getting-started-with-ibm-digital-health-pass/blob/main/images/authorize.png)
 
 Paste the access token from the previous step under `Value`.
 
-![](https://github.ibm.com/sharrkum/getting-started-with-ibm-digital-health-pass/blob/master/images/access-token.png)
+![](https://github.com/IBM/getting-started-with-ibm-digital-health-pass/blob/main/images/access-token.png)
 
 Hit `Authorize` & `Close` and you are now authorized to make API calls.
 
-![](https://github.ibm.com/sharrkum/getting-started-with-ibm-digital-health-pass/blob/master/images/authorized.png)
+![](https://github.com/IBM/getting-started-with-ibm-digital-health-pass/blob/main/images/authorized.png)
 
 
 ###  2. Choose a Schema
@@ -61,31 +61,31 @@ To query existing schemas, follow these steps.
 
 Navigate to `schemas Manage schemas` section in the Swagger UI, click on `GET/schemas Get schemas` & hit `Try it out`.
 
-![](https://github.ibm.com/sharrkum/getting-started-with-ibm-digital-health-pass/blob/master/images/query-sch.png)
+![](https://github.com/IBM/getting-started-with-ibm-digital-health-pass/blob/main/images/query-sch.png)
 
 Update the `Issuer ID` field and hit `Execute`.
 
-![](https://github.ibm.com/sharrkum/getting-started-with-ibm-digital-health-pass/blob/master/images/get-sch.png)
+![](https://github.com/IBM/getting-started-with-ibm-digital-health-pass/blob/main/images/get-sch.png)
 
 Upon successful execution of the query, you will see the message per below with the retrieved schema information which can also be downloaded onto your local file system.
 
-![](https://github.ibm.com/sharrkum/getting-started-with-ibm-digital-health-pass/blob/master/images/retrieved-sch.png)
+![](https://github.com/IBM/getting-started-with-ibm-digital-health-pass/blob/main/images/retrieved-sch.png)
 
 To create a new schema, follow these steps.
 
 Navigate to `schemas Manage schemas` section in the Swagger UI, click on `POST /schemas Create schema` & hit `Try it out`
 
-![](https://github.ibm.com/sharrkum/getting-started-with-ibm-digital-health-pass/blob/master/images/schemas.png)
+![](https://github.com/IBM/getting-started-with-ibm-digital-health-pass/blob/main/images/schemas.png)
 
 Update the details in the text boxes and hit `Execute`. Server response should return with the code `200` to confirm successful execution. 
 
-![](https://github.ibm.com/sharrkum/getting-started-with-ibm-digital-health-pass/blob/master/images/schema-created.png)
+![](https://github.com/IBM/getting-started-with-ibm-digital-health-pass/blob/main/images/schema-created.png)
 
 A sample `Temperature Scan` schema would look like below.
 
-![](https://github.ibm.com/sharrkum/getting-started-with-ibm-digital-health-pass/blob/master/images/get-sch-1.png)
-![](https://github.ibm.com/sharrkum/getting-started-with-ibm-digital-health-pass/blob/master/images/get-sch-2.png)
-![](https://github.ibm.com/sharrkum/getting-started-with-ibm-digital-health-pass/blob/master/images/get-sch-3.png)
+![](https://github.com/IBM/getting-started-with-ibm-digital-health-pass/blob/main/images/get-sch-1.png)
+![](https://github.com/IBM/getting-started-with-ibm-digital-health-pass/blob/main/images/get-sch-2.png)
+![](https://github.com/IBM/getting-started-with-ibm-digital-health-pass/blob/main/images/get-sch-3.png)
 
 
 ### 3. Issue a credential
@@ -93,19 +93,19 @@ A sample `Temperature Scan` schema would look like below.
 
 Navigate to `credentials Manage credentials` section in the Swagger UI and hit `Try it out`.
 
-![](https://github.ibm.com/sharrkum/getting-started-with-ibm-digital-health-pass/blob/master/images/cred.png)
+![](https://github.com/IBM/getting-started-with-ibm-digital-health-pass/blob/main/images/cred.png)
 
 Update the fields like Issuer ID, Credential type (string or encoded), Output type (string or qrcode) and hit `Execute`.
 
-![](https://github.ibm.com/sharrkum/getting-started-with-ibm-digital-health-pass/blob/master/images/cred-execute.png)
+![](https://github.com/IBM/getting-started-with-ibm-digital-health-pass/blob/main/images/cred-execute.png)
 
 A sample `temperature` credential `(string format)` would look like below.
 
-![](https://github.ibm.com/sharrkum/getting-started-with-ibm-digital-health-pass/blob/master/images/temp-cred.png)
+![](https://github.com/IBM/getting-started-with-ibm-digital-health-pass/blob/main/images/temp-cred.png)
 
 A sample `temperature` credential `(qrcode format)` would look like below to be verified by the app in subsequent steps.
 
-<img src="https://github.ibm.com/sharrkum/getting-started-with-ibm-digital-health-pass/blob/master/images/cred-qrcode.png" width="250" height="250">
+<img src="https://github.com/IBM/getting-started-with-ibm-digital-health-pass/blob/main/images/cred-qrcode.png" width="250" height="250">
 
 
 ### 4. Verify a credential
@@ -141,4 +141,4 @@ In the video below, you can see the wallet at work.
 
 ## Summary
 
-In this tutorial, we have learned about IBM Digital Health Pass and also explored features like creating schema, issuing credentials using the IDHP API which can be integrated into different applications to build end to end solution effectively. If you have more questions feel free to visit our [FAQs](https://github.ibm.com/sharrkum/getting-started-with-ibm-digital-health-pass/blob/master/FAQs.md) section to get the details. 
+In this tutorial, we have learned about IBM Digital Health Pass and also explored features like creating schema, issuing credentials using the IDHP API which can be integrated into different applications to build end to end solution effectively. If you have more questions feel free to visit our [FAQs](https://github.com/IBM/getting-started-with-ibm-digital-health-pass/blob/main/FAQs.md) section to get the details. 
